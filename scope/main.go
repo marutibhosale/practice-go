@@ -2,10 +2,17 @@ package main
 
 import (
 	"fmt"
-	packagetwo "myapp/packageone" //
+	"myapp/packageone" //
 )
 
+var myVar = "main-package-var"
+
 func main() {
-	fmt.Println(packagetwo.PublicVar)
-	packagetwo.Exported()
+	fmt.Println(packageone.PublicVar)
+	packageone.Exported()
+
+
+	blockVar := "main-block-var"
+
+	packageone.PrintMe(myVar,blockVar)
 }
