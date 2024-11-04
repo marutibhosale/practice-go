@@ -1,0 +1,15 @@
+%s string, %d int, %b bool, %T for type 
+pointer :-  address of the variable or value,
+            get address by &variablename
+            get valune from that address use *addres
+            let x=10, pointer=&x, *pointer = 20 we can change valune of origin variable by *pointer
+to pass pointer to function we can use like func  fname(num *int) {}  here we can use * for passing pointer to function
+
+var arra [3]string
+var slic  []string
+
+pass struct to function lik func (c, *Circle)   called methods
+
+defer function run after runing main func
+
+go add(a+b) // go keyword before function acts like parallel run
